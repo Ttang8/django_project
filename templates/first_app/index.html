@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>First App</title>
+    <title>Corgi Page</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
   </head>
   <body>
-    <h1>Hello this is index.html!</h1>
+    <h1>Here is a Corgi</h1>
+    <img src="{% static "images/corgi.jpg" %}" alt="oops no pic"/>
     {{ insert_me }}
   </body>
 </html>
